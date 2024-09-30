@@ -304,6 +304,8 @@ pub enum FinishReason {
     content_filter,
     tool_calls,
     null,
+    #[serde(rename = "stop reschedule")]
+    stop_reschedule,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
